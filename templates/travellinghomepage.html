@@ -1,0 +1,49 @@
+{% extends 'Navbar/travellingnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body%}
+<div>
+    <h2 style="color: #85586F">Tourism Page </h2>
+    <div class ="card-group">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/tajmahal.png'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Taj Mahal</h5>
+    <p class="card-text">Taj Mahal, mausoleum complex in Agra, western Uttar Pradesh state, northern India. </p>
+    <a href="www.tajmahal.gov.in" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/chinawall.png'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">China Wall</h5>
+    <p class="card-text">The Great Wall winds through many mountainous regions in northern China, so it could be any one of those.</p>
+    <a href="https://www.luxuryhotelsguides.com/?hotelid=307305&msclkid=e1c6e883f4f410887b3f8d6f117052a9" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/mountain.png'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Machu Picchu</h5>
+    <p class="card-text"> an Inca citadel set high in the Andes mountains in Peru.</p>
+    <a href="https://www.tridenthotels.com/" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/paris.png'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Colosseum </h5>
+    <p class="card-text">It was not a site for friendly bouts of football and musical concerts , exotic animals were put on display.</p>
+    <a href="https://www.hotel-reservations.co.in/?hotelid=8064659&msclkid=227c54b16c0a187884e1315d8ace3077" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% extends 'Navbar/travellingnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GLOBETROTTER</title>
+</head>
+<body>
+{% block body %}
+
+<h1> This is Add Hotels page from Travelling app</h1>
+<div>
+    <div class = "container mt-5">
+         <h3> Hotel Details Form</h3>
+         <form method="post" action="{% url 'add_hotel_details' %}">
+             {% csrf_token %}
+             <div class ="form-group">
+                 <label for="placeTitle">Place Title</label>
+                 <input type="text" class = "form-control" name="placeTitle" id="placeTitle"  placeholder="Enter the place Title">
+             </div>
+             <div class ="form-group">
+                 <label for="roomtype">Room type</label>
+                 <select class = "form-control" name="jobType" id = "roomtype" placeholder="Enter the Room type">
+                         <option value ="Ac">Complete-Ac</option>
+                         <option value ="Non-Ac">No-Ac</option>
+                         <option value ="Both">Ac+NonAc</option>
+                     </select>
+                 <div class ="form-group">
+                 <label for="roomcapacity">Room capacity</label>
+                 <input type="text" class = "form-control" name="roomcapacity" id ="roomcapacity" placeholder="Enter the Room capacity">
+             </div>
+                 <div class ="form-group">
+                 <label for="checkin">Check-in</label>
+                 <input type="text" class = "form-control" name="checkin" id= "checkin" placeholder="Enter the check-in">
+             </div>
+                 <div class ="form-group">
+                 <label for="checkout">Check-out</label>
+                 <input type="text" class = "form-control" name="checkout" id="checkout"  placeholder="Enter the check-out">
+             </div>
+                 <div class ="form-group">
+                 <label for="extraservices">Extra Services</label>
+                 <input type="text" class = "form-control" name="extraservices" id ="extraservices" placeholder="Enter the Extra Services">
+             </div>
+                 <div class ="form-group">
+                 <label for="totalcharge">Total charge</label>
+                 <input type="text" class = "form-control" name="totalcharge" id="totalcharge" placeholder="Enter the Total charge">
+             </div>
+             </div>
+             <button type="submit" class="btn btn-primary">Post the Hotel</button>
+         </form>
+
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

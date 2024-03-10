@@ -1,0 +1,54 @@
+{% extends 'Navbar/projectnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe Trotter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+{% block body%}
+{% if messages %}
+{% for message in messages%}
+{% if messages.tags %}
+<script>alert ("{{ messages }}")</script>
+{% endif %}
+{% endfor %}
+{% endif %}
+
+<section>
+<div class="container1">
+    <div class="bodycontainer" align="center">
+        <h1>Signup Page</h1>
+        <form method="post" action="{% url 'signup1' %}">
+            {% csrf_token %}
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username ID"><br><br>
+            <label>Password</label>
+            <input type="password" name="password"><br><br>
+            <label> Confirm Password</label>
+            <input type="password" name="password1"><br><br>
+            <div class="policy-text">
+          <input type="checkbox" id="policy">
+                <label for="policy">
+            I agree the
+            <a href="#" class="option">Terms & Conditions</a>
+               </label>
+			<div class="inputBox">
+				<button type="submit" name="SUBMIT">Signup</button>
+			</div>
+                <div class="group">
+				<div class="bottom-link">
+                     Already have an account?
+                 <a href="{% url 'login1' %}" id="login-link">Login</a>
+                </div>
+			</div>
+        </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+</section>
+</body>
+</html>

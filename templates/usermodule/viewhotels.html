@@ -1,0 +1,86 @@
+{% extends 'Navbar/usernavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+
+<h1> Available Hotels </h1>
+<div class ="card-group">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel1.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Leela Kovalam</h5>
+    <p class="card-text">This heritage hotel, designed by architect Charles Correa, stands on the rocky promontories of the seaside town of Kovalam.</p>
+    <a href="https://theleelakovalambeach.guestreservations.com" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel2.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Taj Corbett Resort</h5>
+    <p class="card-text">Taj Corbett Resort & Spa, Uttarakhand is located in the fabled Kumaon district at the foothills of the Himalayas.</p>
+    <a href="https://www.luxuryhotelsguides.com/?hotelid=307305&msclkid=e1c6e883f4f410887b3f8d6f117052a9" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel3.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">TRIDENT</h5>
+    <p class="card-text">Trident, Bandra Kurla is an elegant sanctuary located in the heart of the financial and commercial district of North Mumbai.</p>
+    <a href="https://www.tridenthotels.com/" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel4.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Kaldan Samudhra Palace</h5>
+    <p class="card-text">Kaldan Samudhra Palace is 45 minutes away from the City of Chennai, located on the East Coast Road in Mamallapuram.</p>
+    <a href="https://www.hotel-reservations.co.in/?hotelid=8064659&msclkid=227c54b16c0a187884e1315d8ace3077" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class ="card-group">
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel5.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Ananta Resort</h5>
+    <p class="card-text">Set against the breath-taking backdrop of the Aravalli Hills, Ananta Resort  creates a fairy-tale like experience by offering the best of five-star luxuries. </p>
+    <a href="#" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel6.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title"> Sea Shell Resort</h5>
+    <p class="card-text">SeaShell Havelock is one of the best resorts in the Havelock Islands. With an excellent view of the clear emerald waters and coconut tree</p>
+    <a href="#" class="btn btn-primary">Visit</a>
+  </div>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel7.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Silver Sand Beach Resort</h5>
+    <p class="card-text">Welcome to Silversand Beach Resort India, the most beautiful of all the whole Islands. Get away from the crowds and see the nature as it should be. </p>
+    <a href="#" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src="{% static 'images/hotel8.jpg'%}" class="card-img-top" alt="KLU">
+  <div class="card-body">
+    <h5 class="card-title">Shiv Vilas Resort</h5>
+    <p class="card-text">Creation of this palatial structure took us a full Six years </p>
+    <a href="#" class="btn btn-primary">Visit</a>
+  </div>
+  </div>
+</div>
+
+{% endblock %}
+</body>
+</html>

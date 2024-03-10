@@ -1,0 +1,45 @@
+{% extends 'Navbar/projectnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GLOBETROTTER</title>
+</head>
+<body>
+{% block body%}
+<div>
+    <br>
+<h1 align="center">
+    GO,FIND,EXPLORE..
+</h1>
+    <div class="card-group">
+  <div class="card">
+    <img src="{% static 'images/Image1.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Adventurous places</h5>
+      <p class="card-text">“Say Yes to New Adventures!”</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 8 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/Image2.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tourist Places</h5>
+      <p class="card-text">“Jobs fill your pocket, but adventures fill your soul.”</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 6 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'images/Image3.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pleasant Places</h5>
+      <p class="card-text">One touch of nature makes the whole world.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
+</body>
+</html>

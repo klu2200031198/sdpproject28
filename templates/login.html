@@ -1,0 +1,41 @@
+{% extends 'Navbar/projectnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe Trotter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+{% block body %}
+{% if messages %}
+{% for message in messages%}
+{% if messages.tags %}
+<script>alert ("{{ messages }}")</script>
+{% endif %}
+{% endfor %}
+{% endif %}
+
+<section>
+<div class="container1">
+<div class="bodycontainer" align="center">
+        <h1>Login Page</h1>
+        <form method="post" action="{% url 'login1' %}">
+            {% csrf_token %}
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter the Username"><br><br>
+            <label>Password</label>
+            <input type="password" name="password"><br><br>
+            <button type="submit" name="SUBMIT">Submit</button>
+            <div class="bottom-link">
+                     Don't have an account?
+                 <a href="{% url 'signup' %}" id="signup-link">Signup</a>
+                </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+</section>
+</body>
+</html>
